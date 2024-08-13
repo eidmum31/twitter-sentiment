@@ -40,12 +40,12 @@ def pre_process_corpus(docs):
     return norm_docs
 
 # Load the models and vectorizer
-clf_dt = joblib.load('model/decision_tree_model.pkl')
-clf_rf = joblib.load('model/random_forest_model.pkl')
-clf_knn = joblib.load('model/knn_model.pkl')
-clf_nb = joblib.load('model/naive_bayes_model.pkl')
-clf_gru = joblib.load('model/best_model_gru.pkl')
-vectorizer = joblib.load('model/tfidf_vectorizer.pkl')
+clf_dt = joblib.load('decision_tree_model.pkl')
+clf_rf = joblib.load('random_forest_model.pkl')
+clf_knn = joblib.load('knn_model.pkl')
+clf_nb = joblib.load('naive_bayes_model.pkl')
+clf_gru = joblib.load('best_model_gru.pkl')
+vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
 # Streamlit app
 st.title("Sentiment Analysis with Multiple Models")
